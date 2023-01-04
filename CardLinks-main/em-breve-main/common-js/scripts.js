@@ -14,26 +14,9 @@
 	
 	if(isExists('#rounded-countdown')){
 		var remainingSec = $('.countdown').data('remaining-sec');
-		var futuro = $('#rounded-countdown .countdown').data('date');
-		futuro = new Date(futuro);
-
-		var timeDiff = Math.abs(futuro.getTime() - new Date().getTime());
-
 		$('.countdown').ClassyCountdown({
 			theme: "flat-colors-very-wide",
-			
-			now: $.now() / 1000,
-    		end: Date.UTC(2021, 7, 28, 1, 1, 1) / 1000,
-			
-			labelsOptions: {
-				lang: {
-					days: 'Dias',
-					hours: 'Horas',
-					minutes: 'Minutos',
-					seconds: 'Segundos'
-				},
-				style: 'font-size:0.5em; text-transform:uppercase;'
-			}
+			end: $.now() + remainingSec
 		});
 	}
 	
@@ -42,14 +25,12 @@
 	if(isExists('#normal-countdown')){
 		var date = $('#normal-countdown').data('date');
 		$('#normal-countdown').countdown(date, function(event) {
-			
 			var $this = $(this).html(event.strftime(''
 				+ '<div class="time-sec"><h3 class="main-time">%D</h3> <span>Days</span></div>'
 				+ '<div class="time-sec"><h3 class="main-time">%H</h3> <span>Hours</span></div>'
 				+ '<div class="time-sec"><h3 class="main-time">%M</h3> <span>Mins</span></div>'
 				+ '<div class="time-sec"><h3 class="main-time">%S</h3> <span>Sec</span></div>'));
 		});
-
 	}
 	
 	
@@ -92,8 +73,7 @@
 function countdownTime(){
 	
 	if(isExists('#clock')){
-		
-		$('#clock').countdown('2023/12/03', function(event){
+		$('#clock').countdown('2018/01/01', function(event){
 			var $this = $(this).html(event.strftime(''
 				+ '<div class="time-sec"><span class="title">%D</span> days </div>'
 				+ '<div class="time-sec"><span class="title">%H</span> hours </div>'
