@@ -1,13 +1,17 @@
 @media (max-width: 1120px) {
-
   .quote_btn-container a {
+    display: none;
+  }
+
+  .scrollToTop {
+    position: fixed;
+    top: 760px;
+    right: 10px;
     display: none;
   }
 }
 
 @media (max-width: 992px) {
-
-
   .slider_section .slider-container {
     flex-direction: column;
     padding: 0;
@@ -80,6 +84,13 @@
   .contact_items .item {
     margin: 20px;
   }
+
+  .scrollToTop {
+    position: fixed;
+    top: 700px;
+    right: 20px;
+    display: none;
+  }
 }
 
 @media (max-width: 768px) {
@@ -107,23 +118,36 @@
   .contact_section .contact_form-container input {
     width: 100%;
   }
+
+  .scrollToTop {
+    position: fixed;
+    top: 700px;
+    right: 20px;
+    display: none;
+  }
+
+
 }
 
 @media (max-width: 576px) {
-
   .slider_section .carousel-control-prev,
   .slider_section .carousel-control-next {
-
     left: 41.6%;
   }
 
   .custom_heading-container hr {
     display: none;
   }
+
+  .scrollToTop {
+    position: fixed;
+    top: 600px;
+    right: 10px;
+    display: none;
+  }
 }
 
 @media (max-width: 480px) {
-
   .slider_section .carousel-control-prev,
   .slider_section .carousel-control-next {
     left: 39%;
@@ -142,15 +166,28 @@
   .slider_section .detail-box h1 {
     font-size: 2.5rem;
   }
+
+  .scrollToTop {
+    position: fixed;
+    top: 425px;
+    right: 10px;
+    display: none;
+  }
 }
 
-@media (max-width: 420px) {}
+@media (max-width: 420px) {
+}
 
 @media (max-width: 360px) {
-
   .slider_section .carousel-control-prev,
   .slider_section .carousel-control-next {
     left: 36%;
+  }
+  .scrollToTop {
+    position: fixed;
+    top: 375px;
+    right: 10px;
+    display: none;
   }
 }
 
@@ -161,5 +198,11 @@
 
   .custom_nav-container.navbar-expand-lg .navbar-nav .nav-link {
     padding: 10px 30px;
+  }
+  .scrollToTop {
+    position: fixed;
+    top: 755px;
+    right: 30px;
+    display: none;
   }
 }

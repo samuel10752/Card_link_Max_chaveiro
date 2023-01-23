@@ -1107,5 +1107,11 @@ a:focus {
   color: #292929;
 }
 
+.scrollToTop{   
+  position:fixed;
+  top:845px; 
+  right:30px;
+  display:none;
+}
 /* end footer section*/
 /*# sourceMappingURL=style.css.map */
