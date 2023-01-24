@@ -17,7 +17,8 @@
 # De uma Visita ao site!
 
 <br>
-Preview do projeto:https://github.com/samuel10752/Card_link_Max_chaveiro/blob/master/CardLinks/icon/card_link.png
+Preview do projeto:
+<img src="https://github.com/samuel10752/Card_link_Max_chaveiro/blob/master/CardLinks/icon/card_link.png"/>
 <br>
 
 </div>
